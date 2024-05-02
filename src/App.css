@@ -1,0 +1,47 @@
+html { 
+  margin: 0,
+}
+
+
+
+body {
+  /* height: 100%; */
+  margin: 0;
+  padding: 15px;
+  background-image: url('src/assets/download.jpeg');
+  overflow-y: visible;
+  background-color: purple;
+  color: indigo;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+@media screen and (min-width:768px){
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+  .photo {
+    height: 175px;
+  }
+} 
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width:95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+}
+
+

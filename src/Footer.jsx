@@ -1,6 +1,6 @@
 function Footer() {
     return (
-      <div>
+      <div style={{ fontSize: '40px', textShadow: 'purple' }}>
         Bye Felicia
       </div>
     )

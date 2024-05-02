@@ -1,20 +1,35 @@
+
+
 html { 
+  height:100vh;
   margin: 0,
 }
 
 
-
 body {
-  /* height: 100%; */
+  height: 100vh;
   margin: 0;
   padding: 15px;
-  background-image: url('src/assets/download.jpeg');
+  background-image: url('src/assets/splat.jpeg');
   overflow-y: visible;
-  background-color: purple;
-  color: indigo;
+  /* background-color: purple; */
+  color: white;
   background-size: cover; 
   background-repeat: no-repeat;
+  background-position: center;
 }
+.container {
+  /* background-color: indigo; */
+  text-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.transparent-box {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 40px;
+  color:white; 
+}
+
 
 #root {
   max-width: 1280px;
@@ -34,6 +49,11 @@ body {
     height: 175px;
   }
 } 
+@media (max-width: 768px) {
+  body {
+      background-size: 100% 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-center {
     width:95vw;
@@ -43,5 +63,4 @@ body {
     height: 150px;
   }
 }
-
 

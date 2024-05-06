@@ -27,7 +27,7 @@ function ToDoList() {
         if (storedTasks) {
             setTasks(storedTasks);
         }
-    }, []);
+    }, []); 
 
     //CREATE DATA
     useEffect(() => {
@@ -46,7 +46,7 @@ function ToDoList() {
     }
 
     function handleSubmit(event) { //you can press enter
-        event.preventDefault(); //this is to Prevent the default submission behavior
+        event.preventDefault(); //this is to Prevent the default submission behavior???
         if (editIndex !== null) { //i am currently editing this?
             const updatedTasks = [...tasks]; //copy of my array from above
             updatedTasks[editIndex].title = editText; //this updates my title 
@@ -105,7 +105,8 @@ function ToDoList() {
                     </form>
                     <ul style={{ fontSize: '1.3em', listStyleType: 'none' }}>
                         {filteredTasks.map((tasks, index) => (
-                            <li key={index} style={{ color: `hsl(${(index * 50) % 360}, 70%, 50%)` }}>
+                            <li key={index} style={{ color: `hsl(${(index * 50) % 360}, 70%, 50%)` }}> 
+                            {/* hues, saturation and lightness with colors  */}
                                 <input
                                     type="checkbox"
                                     checked={tasks.completed}

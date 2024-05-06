@@ -1,5 +1,3 @@
-
-
 html { 
   height:100vh;
   margin: 0,
@@ -10,7 +8,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 15px;
-  background-image: url('src/assets/splat.jpeg');
+  background-image: url('assets/splat.jpeg');
   overflow-y: visible;
   /* background-color: purple; */
   color: white;
